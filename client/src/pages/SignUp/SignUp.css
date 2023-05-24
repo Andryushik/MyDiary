@@ -1,0 +1,158 @@
+/* ==========================================================================
+                           Login & Sign Up
+========================================================================== */
+
+.signup-page {
+  /* background-image: url("../../assets/landing/landing-background.jpg");
+  background-size: cover;
+  background-position: center; */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-div {
+  position: absolute;
+  width: 300px;
+  height: 650px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -330px 0 0 -150px;
+  padding: var(--whiteSpaceMedium);
+  border-radius: 37px;
+  background-color: white;
+}
+
+.signup-div h2 {
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+.signup-div p {
+  margin-left: 7px;
+}
+
+.signup-name-div {
+  width: 130px;
+  height: 80px;
+  float: left;
+}
+
+.signup-checkbox-div {
+  margin-top: 7px;
+}
+
+.login-input {
+  width: 250px;
+  height: 40px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 7px;
+  margin: 7px;
+  text-align: center;
+  padding-inline-start: 1px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.signup-input {
+  width: 120px;
+  height: 40px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 7px;
+  margin: 7px;
+  text-align: center;
+  padding-inline-start: 1px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.login-input:focus {
+  outline-color: #757575;
+}
+
+.signup-input:focus {
+  outline-color: #757575;
+}
+
+.checkbox-input {
+  width: 25px;
+  height: 25px;
+  accent-color: #f5f5f5;
+  float: left;
+  margin: 7px 20px 7px 7px;
+  padding-inline-start: 1px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.signup-small {
+  color: #bcbcbc;
+}
+
+.exit-button {
+  background: white;
+  border: none;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  font-size: 30px;
+}
+
+.exit-button a {
+  color: #c4c4c4;
+}
+
+.exit-button a:hover {
+  color: #ff9f23;
+}
+
+.login-button {
+  width: 250px;
+  height: 40px;
+  background: #ff9f23;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin: 7px;
+}
+
+.signup-button {
+  width: 250px;
+  height: 40px;
+  background: white;
+  border: none;
+  margin: 7px;
+}
+
+.privacy-button {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.privacy-header {
+  margin-top: var(--whiteSpaceMedium);
+  margin-bottom: var(--whiteSpaceMedium);
+}
+.privacy-policy {
+  margin: 0 var(--whiteSpaceSmall) var(--whiteSpaceSmall) var(--whiteSpaceLarge);
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.privacy-policy a {
+  text-decoration: underline;
+}
+/* Post Content Scrollbar */
+.privacy-policy::-webkit-scrollbar {
+  width: 0.5em;
+}
+.privacy-policy::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--yellow);
+}
+.privacy-policy::-webkit-scrollbar-button:start:decrement,
+.privacy-policy::-webkit-scrollbar-button:end:increment {
+  height: 30px; /* Set the height of the scrollbar buttons */
+}

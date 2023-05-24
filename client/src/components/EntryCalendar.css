@@ -1,0 +1,107 @@
+.icon-container h2 {
+  font-weight: 300;
+  color: var(--gray);
+}
+.event-repeat {
+  font-size: 1.5rem !important;
+}
+.icon-container {
+  padding: 0 var(--whiteSpaceSmall) 0 var(--whiteSpaceSmall);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calendar-container {
+  margin: auto;
+  /* This is for 20.5vw after 1440px */
+  width: 295px;
+  min-height: 100px;
+}
+
+.react-calendar {
+  border: none;
+}
+
+/* Navigation Settings */
+.react-calendar__navigation button {
+  color: var(--orangeYellow);
+  min-width: 44px;
+  background: none;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: var(--invisible);
+  text-decoration: underline;
+}
+.react-calendar__navigation button[disabled] {
+  background-color: var(--invisible);
+  color: var(--softGray);
+}
+
+/* mon tue wed thu... */
+abbr[title] {
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: default;
+}
+
+/* TILE SETTINGS */
+/* default tile */
+.react-calendar__tile {
+  background-color: var(--invisible);
+  /* invisible border for size issues */
+  border: 2px dotted rgba(255, 255, 0, 0) !important;
+}
+/* Highlighted tile */
+.react-calendar__tile.highlight {
+  font-weight: 900;
+  border-radius: 6px;
+  border: 2px dotted var(--midYellow) !important;
+}
+
+.react-calendar__tile:disabled {
+  background-color: var(--invisible);
+  color: var(--softGray);
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: var(--invisible);
+  color: var(--yellow);
+}
+.react-calendar__tile--now {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: var(--invisible);
+}
+.react-calendar__tile--active {
+  background: var(--invisible);
+  color: var(--orangeYellow);
+  text-decoration: underline;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: var(--invisible);
+  color: var(--orangeYellow);
+}
+
+/* ===========================[ 1440px ]================================== */
+@media screen and (max-width: 1440px) {
+  .calendar-container {
+    width: 20.5vw;
+  }
+}
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+  .calendar-container {
+    padding: 0 var(--whiteSpaceMedium);
+    width: 250px;
+  }
+  .icon-container h2 {
+    font-size: 1rem;
+  }
+}

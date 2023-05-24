@@ -1,0 +1,319 @@
+/* google font we are lucky our design font is free :D*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+/* ==========================================================================
+                           General Settings
+========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  /*This make borders included while calculating boz size*/
+  box-sizing: border-box;
+}
+/* These are the main colors of our design. Can be used with: var(--background)*/
+:root {
+  --gray: #292929;
+  --softGray: #b2b1b0;
+  --orangeYellow: #ff8623;
+  --yellow: #ff9f23;
+  --midYellow: #ffa023c1;
+  --softYellow: #ffecd3;
+  --success: #1aac83;
+  --error: #dd2e44;
+  --background: #f5f5f5;
+  --invisible: #ffffff00;
+  /* This paddings look good almost every size more info: https://matthewjamestaylor.com/responsive-padding*/
+  --whiteSpaceLarger: calc(10px + 1.7vw);
+  --whiteSpaceLarge: calc(8px + 1.5625vw);
+  --whiteSpaceMedium: calc(8px + 0.5625vw);
+  --whiteSpaceSmall: calc(4px + 0.5625vw);
+  --whiteSpaceSmaller: calc(4px + 0.1vw);
+}
+html {
+  /* This will take the browser default font size, which usually around 16px then we can scale relatively with rem*/
+  font-size: 100%;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--gray);
+  background-color: var(--background);
+
+  margin: auto;
+  /* If you remove this, body size will change when it is scrollable.  */
+  overflow: overlay;
+}
+/* React Links need style one bye one, so we style them all with a */
+a {
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.page-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+button,
+input {
+  font-family: "Fira Sans", sans-serif;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+/* ==========================================================================
+                           Middle Section
+========================================================================== */
+.middle-section {
+  padding: var(--whiteSpaceLarger) var(--whiteSpaceMedium);
+  width: 56%;
+  min-height: 100vh;
+  min-width: 290px;
+}
+.middle-container {
+  padding: var(--whiteSpaceLarger);
+  width: 100%;
+  border-radius: 37px;
+  background-color: white;
+}
+
+/* ==========================================================================
+                           Right Section
+========================================================================== */
+.right-section {
+  position: sticky;
+  top: 0;
+  width: 26%;
+  height: 100vh;
+
+  max-height: 1080px;
+
+  margin-right: var(--whiteSpaceSmaller);
+  padding: var(--whiteSpaceLarger) var(--whiteSpaceMedium)
+    var(--whiteSpaceMedium) var(--whiteSpaceMedium);
+}
+.triple-container {
+  /* Position */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: var(--whiteSpaceMedium);
+
+  /* Size */
+  width: 100%;
+  height: 100%;
+
+  /* Design */
+  border-radius: 37px;
+}
+.double-container {
+  /* Position */
+  display: grid;
+  grid-template-rows: auto 1fr;
+  row-gap: var(--whiteSpaceMedium);
+
+  /* Size */
+  width: 100%;
+  height: 100%;
+
+  /* Design */
+  border-radius: 37px;
+}
+.single-container {
+  padding: var(--whiteSpaceLarger);
+  width: 100%;
+  height: calc(100vh - (var(--whiteSpaceLarger)) - (var(--whiteSpaceLarger)));
+
+  max-height: 1080px;
+
+  border-radius: 37px;
+  background-color: white;
+}
+
+.top-div {
+  padding: var(--whiteSpaceMedium);
+  border-radius: 37px;
+  background-color: white;
+}
+.middle-div {
+  padding: var(--whiteSpaceMedium);
+  overflow-y: scroll;
+  border-radius: 37px;
+  background-color: white;
+}
+
+/* Scrollbar */
+.middle-div::-webkit-scrollbar,
+.right-section > .single-container::-webkit-scrollbar {
+  width: 0.3em;
+}
+.right-section > .single-container::-webkit-scrollbar-thumb,
+.middle-div::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  max-height: 10px;
+  background-color: transparent;
+}
+.right-section > .single-container:hover::-webkit-scrollbar-thumb,
+.middle-div:hover::-webkit-scrollbar-thumb {
+  background-color: var(--yellow);
+}
+.middle-div::-webkit-scrollbar-button:start:decrement,
+.middle-div::-webkit-scrollbar-button:end:increment {
+  height: 30px; /* Set the height of the scrollbar buttons */
+}
+.right-section > .single-container::-webkit-scrollbar-track-piece:end,
+.middle-div::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 40px;
+}
+.right-section > .single-container::-webkit-scrollbar-track-piece:start,
+.middle-div::-webkit-scrollbar-track-piece:start {
+  margin-top: 40px;
+}
+
+.bottom-div {
+  padding: var(--whiteSpaceMedium);
+  border-radius: 37px;
+  background-color: white;
+  height: min-content;
+}
+
+/* ==========================================================================
+                           Error & Loader
+========================================================================== */
+.orange-button {
+  border: none;
+  border-radius: 7px;
+  background-color: var(--yellow);
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  width: 196px;
+  height: 42px;
+}
+.orange-button:hover {
+  color: var(--gray);
+}
+
+.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--error);
+}
+
+/* !! Loader parent div must have this class */
+.has-loading {
+  position: relative;
+}
+.load-container {
+  margin: auto;
+  margin-top: var(--whiteSpaceLarger);
+  position: relative;
+  width: 50%;
+  height: 100px;
+}
+.loadingSpinnerContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* this will contain all space in parent */
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 10px;
+  backdrop-filter: blur(0.2rem);
+  z-index: 3;
+}
+
+.loadingSpinner {
+  display: inline-block;
+  width: 20%;
+  height: 0;
+  /* Padding bottom actually decide the height for spinner. */
+  padding-bottom: calc(20% - 3px);
+
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #202020;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+.spin-message {
+  margin: calc(8px + 0.5625vw);
+  padding: 0 8px 0 8px;
+
+  text-align: center;
+  color: #232323;
+  font-weight: bolder;
+  border-radius: 4px;
+  background-color: #e4e4e4c6;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* ==========================================================================
+                           Responsive Design
+========================================================================== */
+/* ===========================[ 800px !HEIGHT ]================================== */
+@media screen and (max-height: 800px) {
+  .triple-container {
+    grid-template-rows: auto 1fr;
+  }
+  .triple-container .bottom-div {
+    display: none;
+  }
+}
+
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1166px) {
+}
+
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+  .middle-section {
+    width: 82%;
+  }
+  .right-section {
+    display: none;
+  }
+}
+
+/* ===========================[ 768px ]================================== */
+@media screen and (max-width: 768px) {
+  .middle-section {
+    width: 82%;
+  }
+}
+
+/* ===========================[ 480px ]================================== */
+@media screen and (max-width: 480px) {
+  .page-container {
+    flex-direction: column;
+  }
+  .middle-section {
+    width: 100%;
+  }
+}

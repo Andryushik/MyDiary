@@ -1,0 +1,37 @@
+/* ==========================================================================
+                           Not found page 404 CSS
+========================================================================== */
+.not-found-container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.not-found {
+  width: 30vw;
+  height: 40vh;
+  font-size: larger;
+}
+
+.not-found > h1 {
+  color: var(--orangeYellow);
+}
+
+.not-found > h2 {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.not-found > a {
+  text-decoration: underline;
+  color: var(--softGray);
+}
+
+.not-found > a:hover {
+  color: var(--gray);
+}
+
+.sad {
+  margin-left: 40%;
+}

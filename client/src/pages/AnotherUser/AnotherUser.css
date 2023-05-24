@@ -1,0 +1,74 @@
+/* ==========================================================================
+                           My Posts CSS
+========================================================================== */
+/* Page Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--whiteSpaceSmaller);
+  cursor: default;
+}
+.page-header h4 {
+  padding-top: var(--whiteSpaceSmaller);
+  text-align: left;
+  font-weight: 300;
+  color: var(--softGray);
+}
+.page-header .left {
+  width: 30%;
+}
+.page-header button {
+  cursor: pointer;
+  letter-spacing: 0.02rem;
+  border-radius: 10px;
+  color: var(--gray);
+  background-color: rgba(255, 255, 255, 0);
+  min-width: 85px;
+  border: 2px solid var(--yellow);
+  margin-top: var(--whiteSpaceSmall);
+  padding: var(--whiteSpaceSmaller) var(--whiteSpaceSmall)
+    var(--whiteSpaceSmaller) var(--whiteSpaceSmall);
+}
+.page-header button:hover {
+  color: var(--orangeYellow);
+}
+.another-profile {
+  padding-right: var(--whiteSpaceSmaller);
+}
+.another-profile .profile-picture-component {
+  min-width: 80px;
+  min-height: 80px;
+}
+
+.page-header .right {
+  width: 30%;
+}
+
+.page-header .right h3 {
+  margin-top: 0;
+  text-align: right;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+                             Responsive Design
+  ========================================================================== */
+
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1166px) {
+}
+
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ===========================[ 768px ]================================== */
+@media screen and (max-width: 768px) {
+}
+
+/* ===========================[ 480px ]================================== */
+@media screen and (max-width: 480px) {
+}

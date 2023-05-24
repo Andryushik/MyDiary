@@ -1,0 +1,87 @@
+.pop-up {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: 0.7s;
+  z-index: 20;
+  backdrop-filter: blur(0.2rem);
+}
+.pop-up.modalPop {
+  width: 100%;
+  height: 100%;
+}
+
+.pop-up-content {
+  position: relative;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: var(--whiteSpaceMedium);
+  border-radius: 20px;
+  background-color: white;
+  max-width: 60%;
+  max-height: 60vh;
+  min-height: 100px;
+  min-width: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.popup-message {
+  padding: var(--whiteSpaceLarger) 0;
+}
+.pop-up-close {
+  cursor: pointer;
+  top: 1px;
+  right: 1px;
+  position: absolute;
+  width: 30px;
+  font-size: 20px;
+  color: var(--softGray);
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 1px var(--softYellow);
+}
+.pop-up-close:hover {
+  color: var(--yellow);
+}
+.pop-up-message {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: var(--whiteSpaceMedium);
+}
+.pop-up-button {
+  cursor: pointer;
+  border: 2px solid var(--yellow);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--gray);
+  letter-spacing: 0.05rem;
+  background-color: white;
+  font-family: "Fira Sans", sans-serif;
+  padding: var(--whiteSpaceSmall);
+}
+.pop-up-button:hover {
+  color: var(--orangeYellow);
+}
+.popUp-Image-container {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 60vh;
+  max-height: 60vh;
+}
+.pop-up-content img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}

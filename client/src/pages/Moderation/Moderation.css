@@ -1,0 +1,56 @@
+/* ==========================================================================
+                           Moderation CSS
+========================================================================== */
+.moderation-header {
+  cursor: default;
+  padding: var(--whiteSpaceLarger);
+  width: 100%;
+  border-radius: 37px;
+  background-color: white;
+}
+
+.headers-switch {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--whiteSpaceSmall);
+}
+
+.headers-switch > h2 {
+  color: var(--softGray);
+  cursor: pointer;
+}
+
+h2.active-tab {
+  text-decoration: underline;
+  color: var(--gray);
+}
+
+.moderation-header p {
+  color: var(--softGray);
+}
+
+/* ==========================================================================
+                             Responsive Design
+  ========================================================================== */
+
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1166px) {
+}
+
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ===========================[ 768px ]================================== */
+@media screen and (max-width: 768px) {
+  .headers-switch > h2 {
+    font-size: 1rem;
+  }
+  .moderation-header p {
+    font-size: 0.8rem;
+  }
+}
+
+/* ===========================[ 480px ]================================== */
+@media screen and (max-width: 480px) {
+}

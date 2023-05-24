@@ -1,0 +1,78 @@
+/* ==========================================================================
+                           Profile Picture
+========================================================================== */
+.profile-picture-component {
+  margin: auto;
+  width: 187px;
+  height: 187px;
+  min-width: 40px;
+  min-height: 40px;
+}
+.profile-picture-component img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.profile-picture-component.medium {
+  width: 122px;
+  height: 122px;
+}
+.profile-picture-component.small {
+  width: 93px;
+  height: 93px;
+}
+.profile-picture-component.smaller {
+  width: 64px;
+  height: 64px;
+}
+
+.profile-picture-component img.square {
+  border-radius: 0;
+}
+.profile-picture-component img.rounded {
+  border-radius: 37px;
+}
+
+/* ==========================================================================
+                             Responsive Design
+  ========================================================================== */
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1440px) {
+  .profile-picture-component {
+    width: 13vw;
+    height: 13vw;
+  }
+  .profile-picture-component.medium {
+    width: 8.5vw;
+    height: 8.5vw;
+  }
+  .profile-picture-component.small {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+  .profile-picture-component.smaller {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+}
+
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1166px) {
+}
+
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ===========================[ 768px ]================================== */
+@media screen and (max-width: 768px) {
+}
+
+/* ===========================[ 480px ]================================== */
+@media screen and (max-width: 480px) {
+}

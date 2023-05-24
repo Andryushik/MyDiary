@@ -1,0 +1,209 @@
+/* ==========================================================================
+                           Add New Post CSS
+========================================================================== */
+
+/* ================[ Top ]================== */
+.new-post-top h3 {
+  text-align: center;
+  font-weight: 200;
+  color: var(--yellow);
+  padding: var(--whiteSpaceMedium);
+  margin-top: 0;
+}
+.post-exit {
+  cursor: pointer;
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  width: 30px;
+  font-size: 20px;
+  color: var(--softGray);
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 1px var(--softYellow);
+}
+.post-exit:hover {
+  color: var(--yellow);
+}
+
+/* ================[ Content ]================== */
+.new-post-content {
+  border: 1px solid var(--softGray);
+  margin-bottom: var(--whiteSpaceMedium);
+  resize: none;
+  color: var(--gray);
+  font-weight: light;
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  line-height: 1.3rem;
+  padding: var(--whiteSpaceMedium);
+  text-align: left;
+  width: 100%;
+  min-height: 110px;
+  max-height: 250px;
+  border-radius: 5px;
+}
+.new-post-content::placeholder,
+.new-post-tags input::placeholder {
+  text-align: left;
+}
+
+/* Post Content Scrollbar */
+.new-post-content::-webkit-scrollbar {
+  width: 0.5em;
+}
+.new-post-content::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--yellow);
+}
+.new-post-content::-webkit-scrollbar-button:start:decrement,
+.new-post-content::-webkit-scrollbar-button:end:increment {
+  height: 20px; /* Set the height of the scrollbar buttons */
+}
+.new-post-content:focus,
+.new-post-tags input {
+  outline-color: var(--yellow);
+}
+
+/* ================[ Tags ]================== */
+.new-post-tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--whiteSpaceMedium);
+}
+.new-post-tags h3 {
+  padding-right: var(--whiteSpaceSmall);
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+.new-post-tags input {
+  width: 100%;
+  padding: var(--whiteSpaceSmall);
+  border-radius: 5px;
+  border: 1px solid var(--softGray);
+}
+
+/* ================[ Bottom ]================== */
+.new-post-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* BOTTOM LEFT */
+.new-post-bottom-left .active-posts {
+  color: var(--gray);
+  text-decoration: underline;
+  font-weight: 400;
+}
+.new-post-bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new-post-bottom-left h3 {
+  cursor: pointer;
+  margin-top: 0;
+  display: flex;
+  font-size: 0.9rem;
+  color: var(--softGray);
+  font-weight: 400;
+}
+.new-post-bottom-left .private {
+  padding-left: var(--whiteSpaceMedium);
+}
+.new-post-bottom-left h3:hover {
+  color: var(--gray);
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+/* BOTTOM RIGHT */
+.add-post-image {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 50vw;
+  max-height: 50vh;
+  border-radius: 5px;
+  margin-bottom: var(--whiteSpaceMedium);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.add-post-image img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.new-post-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.add-post-image {
+  margin-right: var(--whiteSpaceSmall);
+}
+.new-post .attach {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+.new-post svg {
+  padding: 12%;
+  cursor: pointer;
+}
+.new-post path {
+  fill: var(--softGray);
+}
+.new-post svg:hover path {
+  fill: var(--gray);
+}
+
+/* Button attach photo */
+.attach {
+  background: none;
+  border: none;
+}
+
+.post-publish-button {
+  min-width: 10em;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+  color: var(--background);
+  background-color: var(--yellow);
+  padding: var(--whiteSpaceSmaller) var(--whiteSpaceLarge)
+    var(--whiteSpaceSmaller) var(--whiteSpaceLarge);
+  margin-left: var(--whiteSpaceSmall);
+  border-radius: 7.5px;
+  border: none;
+}
+.post-publish-button:hover {
+  background-color: var(--orangeYellow);
+}
+
+/* ==========================================================================
+                             Responsive Design
+  ========================================================================== */
+
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1166px) {
+}
+
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ===========================[ 768px ]================================== */
+@media screen and (max-width: 768px) {
+}
+
+/* ===========================[ 480px ]================================== */
+@media screen and (max-width: 480px) {
+}

@@ -1,0 +1,16 @@
+/* ==========================================================================
+                           ContactBlock component CSS
+========================================================================== */
+
+.contact-block {
+  margin-bottom: 30px;
+}
+
+.mail-link {
+  color: var(--yellow);
+  font-weight: 500;
+}
+
+.contact-block-text {
+  margin: 10px 0;
+}

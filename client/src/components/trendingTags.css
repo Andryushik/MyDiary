@@ -1,0 +1,48 @@
+.popular-tag-h3 {
+  text-align: center;
+  font-weight: 400;
+}
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem;
+  max-height: 150px;
+  overflow-y: scroll;
+}
+/* Post Content Scrollbar */
+.tags-container::-webkit-scrollbar {
+  width: 0.5em;
+}
+.tags-container::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--yellow);
+}
+.tags-container::-webkit-scrollbar-button:start:decrement,
+.tags-container::-webkit-scrollbar-button:end:increment {
+  height: 30px; /* Set the height of the scrollbar buttons */
+}
+.tags {
+}
+
+.tags p {
+  list-style-type: square;
+  text-transform: capitalize;
+  color: gray;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--softGray);
+}
+.tags p::before {
+  content: "#";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+}
+.tags p:hover {
+  color: var(--yellow);
+}

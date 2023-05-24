@@ -1,0 +1,92 @@
+/* ==========================================================================
+                           Feeds CSS
+========================================================================== */
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+}
+
+.feed-header .left {
+  width: 40%;
+}
+
+.feed-header .right {
+  width: 40%;
+}
+.feed-header .right h3 {
+  text-align: right;
+}
+
+/* Search */
+.feed-search-form {
+  border-radius: 30px;
+  color: var(--gray);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--whiteSpaceSmall) var(--whiteSpaceMedium) var(--whiteSpaceSmall)
+    var(--whiteSpaceMedium);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.feed-search-input {
+  width: 80%;
+  border: transparent;
+}
+.feed-search-input::placeholder {
+  text-align: left;
+}
+
+.feed-search-input:focus {
+  outline: none;
+  border-bottom: 1px solid #b2b1b0;
+}
+
+.feed-search-button {
+  width: 20%;
+  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+  color: var(--softGray);
+}
+
+.feed-search-form:focus-within .feed-search-icon {
+  color: var(--gray);
+}
+.feed-search-icon:hover {
+  color: var(--orangeYellow);
+}
+/* ==========================================================================
+                             Responsive Design
+  ========================================================================== */
+
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1166px) {
+}
+
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+  .feed-header .left {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .feed-header .right {
+    width: 48%;
+  }
+  .feed-header .calendar-small {
+    width: 33%;
+  }
+}
+
+/* ===========================[ 768px ]================================== */
+@media screen and (max-width: 768px) {
+}
+
+/* ===========================[ 480px ]================================== */
+@media screen and (max-width: 480px) {
+}

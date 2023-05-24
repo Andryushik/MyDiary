@@ -1,0 +1,75 @@
+:root {
+  --dropdown-width: 120px;
+}
+
+/* Button styles */
+a.dropdownButton {
+  letter-spacing: 0.1rem;
+  user-select: none;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  position: absolute;
+  margin: 0px 0px 0 0;
+  padding: var(--whiteSpaceSmaller) 0;
+  min-width: var(--dropdown-width);
+  left: 50%;
+  margin-left: calc((var(--dropdown-width) * -1));
+  box-sizing: border-box;
+  z-index: 12;
+  background: white;
+  border-radius: 6px;
+  list-style: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.dropdown ul li {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding: var(--whiteSpaceSmaller);
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  color: var(--grey);
+  user-select: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.dropdown ul li:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown triangle */
+.dropdown summary {
+  list-style: none;
+  list-style-type: none;
+  /* for hiding ugly arrows in Safari */
+  color: transparent;
+}
+/* Close the dropdown with outside clicks */
+.dropdown > summary::before {
+  display: none;
+  cursor: auto;
+}
+
+.dropdown[open] > summary::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}

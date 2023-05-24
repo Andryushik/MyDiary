@@ -1,0 +1,86 @@
+/* ==========================================================================
+                           Delete profile form
+========================================================================== */
+
+.deleteProfileWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.deleteProfileWrapper > h2 {
+  align-self: center;
+  color: darksalmon;
+  margin-bottom: 20px;
+}
+
+.attention {
+  color: red;
+}
+
+.deleteProfileForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  color: darkslategray;
+}
+
+.deleteProfileForm > label {
+  margin-top: 5px;
+}
+
+.deleteProfileForm > input {
+  font-size: 0.9rem;
+  color: darkslategray;
+  background-color: var(--background);
+  margin: 10px 0;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.deleteProfileForm > input:focus {
+  color: black;
+  outline: 1px solid darkgray;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.deleteSubmit {
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #ff9f23;
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.deleteCancel {
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: darksalmon;
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.button-white {
+  width: 60%;
+  height: 40px;
+  background: transparent;
+  color: var(--gray);
+  border: 2px solid var(--yellow);
+  border-radius: 7px;
+  cursor: pointer;
+}

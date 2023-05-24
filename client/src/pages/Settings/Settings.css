@@ -1,0 +1,272 @@
+/* ==========================================================================
+                           SettingsMiddle & SettingsChangePP CSS
+========================================================================== */
+
+.settings-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+}
+
+.settings-update-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.settings-form-wrapper {
+  display: grid;
+  grid-template-areas:
+    "firstname settings-change-PP"
+    "lastname settings-change-PP"
+    "birthday country"
+    "bio bio"
+    "email password"
+    "change-password-button settings-submit-button"
+    "settings-delete-title settings-delete-title";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 0.1fr;
+  gap: 1px 20px;
+  min-height: 80vh;
+  margin-bottom: 10px;
+}
+
+.firstname {
+  grid-area: firstname;
+}
+
+.lastname {
+  grid-area: lastname;
+}
+
+.settings-change-PP {
+  grid-area: settings-change-PP;
+}
+
+.birthday {
+  grid-area: birthday;
+}
+
+.country {
+  grid-area: country;
+}
+
+.bio {
+  grid-area: bio;
+}
+
+.email {
+  grid-area: email;
+}
+
+.password {
+  grid-area: password;
+}
+
+.settings-delete-title {
+  grid-area: settings-delete-title;
+}
+
+.settings-input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-change-PP {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.add-photo-button {
+  position: absolute;
+  left: 30%;
+  top: 55%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.settings-input-block > input,
+.settings-bio-input {
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-family: "Fira Sans", sans-serif;
+  margin: 10px 0;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  background-color: var(--background);
+  border-bottom: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.settings-form .settings-input-block > ::placeholder,
+.settings-bio-input::placeholder {
+  text-align: left;
+}
+
+.settings-form > input:focus,
+.settings-bio-input:focus {
+  color: black;
+  outline: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.settings-submit-button,
+.change-password-button {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--yellow);
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.change-password-button {
+  grid-area: change-password-button;
+  background-color: var(--gray);
+}
+
+.settings-submit-button {
+  grid-area: settings-submit-button;
+}
+
+.settings-delete-title {
+  color: var(--softGray);
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.settings-bio-input {
+  height: auto;
+}
+
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1166px) {
+  .profile-picture-component.medium {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .add-photo-button {
+    left: 20%;
+  }
+}
+
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+  .profile-picture-component.medium {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .add-photo-button {
+    left: 15%;
+  }
+}
+
+/* ===========================[ 768px ]================================== */
+@media screen and (max-width: 768px) {
+  .profile-picture-component.medium {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .add-photo-button {
+    left: 25%;
+  }
+}
+
+/* ===========================[ 480px ]================================== */
+@media screen and (max-width: 480px) {
+  .settings-form-wrapper {
+    grid-template-areas:
+      "settings-change-PP"
+      "firstname"
+      "lastname"
+      "birthday"
+      "country"
+      "bio"
+      "email"
+      "password"
+      "change-password-button"
+      "settings-submit-button"
+      "settings-delete-title";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px;
+  }
+
+  .profile-picture-component.medium {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .add-photo-button {
+    left: 20%;
+  }
+}
+
+/* ==========================================================================
+                           Settings Right CSS
+========================================================================== */
+.settings-right-wrapper {
+  overflow-y: scroll;
+}
+
+.settings-right-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.settings-right-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+.copyrights {
+  margin-top: 30px;
+}
+
+/* Post Content Scrollbar */
+.settings-right-wrapper::-webkit-scrollbar {
+  width: 0.5em;
+}
+.settings-right-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--yellow);
+}
+.settings-right-wrapper::-webkit-scrollbar-button:start:decrement,
+.settings-right-wrapper::-webkit-scrollbar-button:end:increment {
+  height: 30px; /* Set the height of the scrollbar buttons */
+}
+
+/* ==========================================================================
+                             Responsive Design
+  ========================================================================== */
+
+/* ===========================[ 1166px ]================================== */
+@media screen and (max-width: 1166px) {
+}
+
+/* ===========================[ 1024px ]================================== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ===========================[ 768px ]================================== */
+@media screen and (max-width: 768px) {
+}
+
+/* ===========================[ 480px ]================================== */
+@media screen and (max-width: 480px) {
+}
