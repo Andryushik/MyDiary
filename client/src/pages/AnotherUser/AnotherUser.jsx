@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import AnotherUserMiddle from "../../components/AnotherUserMiddle";
 import MyPostsRight from "../../components/MyPostsRight";
 import "./AnotherUser.css";
+
 const AnotherUser = () => {
   return (
     <div className="page-container">

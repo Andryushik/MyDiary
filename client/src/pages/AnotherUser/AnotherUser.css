@@ -9,15 +9,18 @@
   padding-bottom: var(--whiteSpaceSmaller);
   cursor: default;
 }
+
 .page-header h4 {
   padding-top: var(--whiteSpaceSmaller);
   text-align: left;
   font-weight: 300;
   color: var(--softGray);
 }
+
 .page-header .left {
   width: 30%;
 }
+
 .page-header button {
   cursor: pointer;
   letter-spacing: 0.02rem;
@@ -30,12 +33,15 @@
   padding: var(--whiteSpaceSmaller) var(--whiteSpaceSmall)
     var(--whiteSpaceSmaller) var(--whiteSpaceSmall);
 }
+
 .page-header button:hover {
   color: var(--orangeYellow);
 }
+
 .another-profile {
   padding-right: var(--whiteSpaceSmaller);
 }
+
 .another-profile .profile-picture-component {
   min-width: 80px;
   min-height: 80px;

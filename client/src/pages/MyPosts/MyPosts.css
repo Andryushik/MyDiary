@@ -58,6 +58,7 @@
   width: 201px;
   height: 43px;
 }
+
 .post-button button:hover {
   background-color: var(--orangeYellow);
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
@@ -69,17 +70,21 @@
   justify-content: space-between;
   padding-top: var(--whiteSpaceLarger);
 }
+
 .public-private h4 {
   cursor: pointer;
   font-weight: 500;
   color: var(--softGray);
 }
+
 .public-private span {
   font-weight: 400;
 }
+
 .public-private h4:hover {
   text-decoration: underline;
 }
+
 .public-private .active-posts {
   color: var(--gray);
 }
@@ -95,6 +100,7 @@
   width: 100%;
   min-height: 80px;
 }
+
 /* ==========================================================================
                              Responsive Design
   ========================================================================== */

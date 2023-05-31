@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
-
-import { Link } from "react-router-dom";
-import TEST_ID from "./Home.testid";
 import Loading from "../../components/Loading";
-import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import { useUserContext } from "../../hooks/useUserContext";
 import "./Home.css";

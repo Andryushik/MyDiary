@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import PropTypes from "prop-types";
 
+//Creating a post context
 export const PostsContext = createContext();
 
 export const PostsContextProvider = ({ children }) => {

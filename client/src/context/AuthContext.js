@@ -42,7 +42,6 @@ export const AuthContextProvider = ({ children }) => {
   );
 };
 
-// This required for Eslint, without this: { children } make a problem.
 AuthContextProvider.propTypes = {
   children: PropTypes.element.isRequired,
 };
