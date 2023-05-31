@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: var(--whiteSpaceMedium);
+  padding: var(--whiteSpaceSmall);
   border-radius: 20px;
   background-color: white;
   max-width: 60%;
@@ -38,8 +38,8 @@
 }
 .pop-up-close {
   cursor: pointer;
-  top: 1px;
-  right: 1px;
+  top: 20px;
+  right: 20px;
   position: absolute;
   width: 30px;
   font-size: 20px;
