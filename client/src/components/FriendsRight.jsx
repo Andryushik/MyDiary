@@ -1,5 +1,4 @@
 import React from "react";
-
 import FriendsToFollow from "./FriendsToFollow";
 import PropTypes from "prop-types";
 

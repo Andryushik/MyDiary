@@ -46,7 +46,7 @@ const Home = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="has-loading" data-testid={TEST_ID.container}>
+        <div className="has-loading">
           <div className="landing-left has-loading">
             <img src={logo} alt="Logo" />
             <h2>Start writing your first diary and share it with friends</h2>
