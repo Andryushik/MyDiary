@@ -94,9 +94,6 @@ input {
   top: 0;
   width: 26%;
   height: 100vh;
-
-  max-height: 1080px;
-
   margin-right: var(--whiteSpaceSmaller);
   padding: var(--whiteSpaceLarger) var(--whiteSpaceMedium)
     var(--whiteSpaceMedium) var(--whiteSpaceMedium);
