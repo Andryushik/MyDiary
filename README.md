@@ -19,6 +19,8 @@ Additionally, our website is moderated by a dedicated team to ensure a safe and 
 
 Experience the power of social networking and connect with others through our user-friendly interface, designed to provide a smooth and engaging experience. Start sharing your stories, discovering new connections, and exploring a vibrant community on our social networking website.
 
+Experience the full potential of our website with our interactive demo, where you can explore its captivating features using the demo login credentials: username "<cool@test.com>" and password "12345678".
+
 [Click here for the Demo version](https://c41-team-two.herokuapp.com/)
 
 ## 1. Setup
