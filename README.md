@@ -2,7 +2,7 @@
 
 # Class 41 final project
 
-This is the final project for the HackYourFuture curriculum we did as a class using the MERN stack by following the agile methodology with our team and a group of mentors. A quick guide to what we built:
+This is the final project of our team for the HackYourFuture curriculum. We used the MERN stack and the agile methodology under control of our mentors. A quick guide to what we built:
 
 The project _'My diary'_ is a social networking website developed by Team 2 of class 41. It provides a platform for users to create personal diaries and share their stories with friends and the community. Users can sign up and create profiles, add friends, and search for other users and posts. The website provides offers a variety of features and menu sections:
 
